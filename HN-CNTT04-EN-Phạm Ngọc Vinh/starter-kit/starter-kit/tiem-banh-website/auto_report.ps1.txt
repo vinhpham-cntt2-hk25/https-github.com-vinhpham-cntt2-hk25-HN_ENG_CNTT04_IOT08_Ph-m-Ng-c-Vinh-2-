@@ -1,0 +1,10 @@
+# Script: auto_report.ps1
+# Tac gia: Phạm Ngọc Vinh
+# Ngay tao: 10/15/2026
+ 
+Write-Host "Dang loc log..."
+ 
+"=== BAO CAO LOI ===" > HOAN_THIEN
+Get-Content HOAN_THIEN | Select-String "HOAN_THIEN" >> HOAN_THIEN
+ 
+Write-Host "Hoan thanh!"
